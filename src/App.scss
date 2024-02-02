@@ -48,6 +48,7 @@
   width: 100%;
   background: linear-gradient(180deg, black, transparent);
   z-index: 10;
+  padding-bottom: 50px;
   select{
     background: rgba(0,0,0,.4);
     border: 1px solid #aaa;
@@ -76,7 +77,7 @@
     width: 100%;
     height: 100%;
   }
-  img{
+  video{
     width: 100%;
   }
   .our-story{
@@ -105,6 +106,7 @@
       animation-direction: normal;
       animation-fill-mode: none;
     }
+    
   }
   .input-group{
     input{
@@ -149,13 +151,13 @@
     }
   }
   .shadow{
-    background-color: rgba(254, 253, 253, 0.4);
+    // background-color: rgba(254, 253, 253, 0.4);
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
   }
-  img{
+  video{
     width: 100%;
   }
   .login-form-other{
@@ -173,7 +175,7 @@
 
 // Banner
 .banner {
-  background-image: url("https://th.bing.com/th/id/OIP.3iT_Y5i6x7Zaq-aKmaO26AHaEo?rs=1&pid=ImgDetMain");
+  background-image: url("https://media1.tenor.com/images/920ca78771f41261b322b176c4ef7e66/tenor.gif?itemid=10157453");
   background-position: center center;
   background-size: cover;
   color: #fff;
@@ -350,6 +352,44 @@
   gap: 20px; /* Adjust the gap between cards as needed */
 }
 
+.card-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 5px solid transparent; /* Adjust the border size and color */
+  background: linear-gradient(to bottom right, #a890f4, #6381dc,#2352de,#a86df0, #3e465f); /* Adjust gradient colors */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
+}
+
+.card-container:hover::before {
+  opacity: 1;
+}
+
+.view-more-link {
+  position: absolute;
+  bottom: 20px; /* Adjust the position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background: #090348;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition for opacity and transform */
+}
+
+.card:hover .view-more-link {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-200px); /* Adjust the translateY value for the desired vertical movement */
+}
+
 .card {
   width: 300px;
   background-color: #fff;
@@ -357,6 +397,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+
+  
 
 
   h3 {

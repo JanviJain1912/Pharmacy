@@ -6,6 +6,7 @@ import { getAuth,
 } from "firebase/auth";
 import { firebaseConfig } from './firebaseConfig.js';
 import { useEffect, useState } from "react";
+import video from '../assets/video.mp4'
 
 const Login = () => {
   initializeApp(firebaseConfig);
@@ -71,7 +72,7 @@ const Login = () => {
   };
 
   return(
-    <div className="login">
+    <div className="login ">
       <div className="holder">
         <h1 className="text-black">{ page ? 'Sign In' : 'Register'}</h1>
         <br/>
@@ -109,7 +110,7 @@ const Login = () => {
         { isEmailUsed && <p className="text-danger">Email already in use | Go for Sign In</p> }
         <div className="login-form-other">
           <div className="login-signup-now">
-          { page ? 'New to Netflix?' : 'Existing User'} &nbsp;
+          { page ? 'New to VD CHEM' : 'Existing User'} &nbsp;
             <Link className=" text-black" to={page ? '/register' : '/login'}>
               { page ? 'Sign up now' : 'Sign In'}
             </Link>.
@@ -117,7 +118,8 @@ const Login = () => {
         </div>
       </div>
       <div className="shadow"></div>
-        <img className="concord-img vlv-creative" src="https://wallpaperaccess.com/full/4204907.jpg" alt="" />
+        {/* <img className="concord-img vlv-creative" src="https://wallpaperaccess.com/full/4204907.jpg" alt="" /> */}
+        <video className="concord-img vlv-creative" src={video} autoPlay loop muted/>
     </div>
   )
 }

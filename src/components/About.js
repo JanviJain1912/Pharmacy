@@ -14,7 +14,7 @@ const About = () => {
         <div className='row'>
 
           <div className='col-lg-6'>
-            <img className='about__image1 animate animate--count animate--fast' src='https://az505806.vo.msecnd.net/cms/7a83aefd-0794-42b3-bd73-58b3a9641c09/081e777c-8fad-4e52-96d9-1e01889a317d-lg.jpg' alt='' />
+            <img className='about__image1 animate animate--count animate--fast' src='https://media4.giphy.com/media/lwEwMEwI093dT5sjvm/200.gif?cid=790b7611yq56k9lnv3b553gy8a2dqjad6iqkt09ep2h9cqt8&rid=200.gif&ct=g' alt='' />
           </div>
           <div className='col-lg-6'>
             <h1 className='about_section_heading'>Our Staff</h1>
@@ -50,7 +50,7 @@ const About = () => {
             </p>
           </div>
           <div className='col-lg-6'>
-            <img className='about__image2 animate animate--count animate--fast' src='https://i.pinimg.com/originals/ee/a2/fb/eea2fbe8f36fb370d58dfd82b93236bd.jpg' alt='' />
+            <img className='about__image2 animate animate--count animate--fast' src='https://media1.giphy.com/media/PhQlfOQn8x8dy/giphy.gif' alt='' />
           </div>
         </div>
       </section>

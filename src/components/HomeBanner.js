@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
+// import video from '../assets/banner1.mp4';
+import video from '../assets/video.mp4'
 
 
 const HomeBanner = () => {
@@ -15,9 +17,11 @@ const HomeBanner = () => {
             <input type="text" className="form-control" placeholder="Drug Name" />
             <Link to = "/register" className="input-group-button btn btn-danger text-white">Search Now</Link>
           </div>
+          
         </div>
         <div className="shadow"></div>
-        <img className="concord-img vlv-creative" src="https://wallpaperaccess.com/full/4204907.jpg"  alt=""></img>
+        {/* <img className="concord-img vlv-creative" src="https://wallpaperaccess.com/full/4204907.jpg"  alt=""></img> */}
+        <video className="concord-img vlv-creative" src={video} autoPlay loop muted/>
       </div>
       {/* Features Section */}
       <section className="white-section" id="features">
@@ -51,7 +55,7 @@ const HomeBanner = () => {
           <Carousel.Item>
             <img
               className="d-block w-100 carousel-image"
-              src="https://i.pinimg.com/originals/08/8d/34/088d34a1b719babee183262b02edb280.jpg"
+              src="https://media.giphy.com/media/3fk0i2VKOX1TEZQbcJ/giphy.gif"
               alt="First slide"
             />
             <Carousel.Caption>
@@ -62,7 +66,8 @@ const HomeBanner = () => {
           <Carousel.Item>
             <img
               className="d-block w-100 carousel-image"
-              src="https://i.pinimg.com/originals/72/59/6e/72596e499f868bdfce8220559315fcf5.jpg"
+              // src="https://i.pinimg.com/originals/72/59/6e/72596e499f868bdfce8220559315fcf5.jpg"
+              src = "https://c.tenor.com/_KocX26s3x0AAAAC/science-scientist.gif"
               alt="Second slide"
             />
             <Carousel.Caption>
@@ -73,7 +78,8 @@ const HomeBanner = () => {
           <Carousel.Item>
             <img
               className="d-block w-100 carousel-image"
-              src="https://i.pinimg.com/originals/6d/ab/ca/6dabcace6f64646d05e063802e91d404.jpg"
+              // src="https://i.pinimg.com/originals/6d/ab/ca/6dabcace6f64646d05e063802e91d404.jpg"
+              src="https://miro.medium.com/max/1400/1*RA_71cD_4Uopb3yZpSQu8A.gif"
               alt="Third slide"
             />
             <Carousel.Caption>
@@ -91,7 +97,7 @@ const HomeBanner = () => {
             <img src="https://d1m8gswelyy0gk.cloudfront.net/sites/default/files/styles/large/public/project/pictures/Prescription-280l.jpg?itok=XjMnYxrw" alt="Card Image" />
               <div class="card-content">
                   <h3 className='feature-title'>Online Prescription Refill and Ordering</h3>
-                  {/* <p>This is a sample card with some content. You can customize it as needed.</p> */}
+                  <Link to='/register' class="view-more-link">View More Products </Link>
               </div>
           </div>
 
@@ -99,7 +105,7 @@ const HomeBanner = () => {
             <img src="https://th.bing.com/th/id/OIP.xo5JTTupr9UbOEA5rTndSQHaFe?rs=1&pid=ImgDetMain" alt="Card Image" />
               <div class="card-content">
                   <h3 className='feature-title'>Over-the-Counter (OTC) Medications</h3>
-                  {/* <p>This is a sample card with some content. You can customize it as needed.</p> */}
+                  <Link to='/register' class="view-more-link">View More Products </Link>
               </div>
           </div>
 
@@ -107,6 +113,7 @@ const HomeBanner = () => {
             <img src="https://th.bing.com/th/id/OIP.Kq07Al8VNnzf0mvhEZKtkwHaFE?rs=1&pid=ImgDetMain" alt="Card Image" />
               <div class="card-content">
                   <h3 className='feature-title'>Drug Safety and Regulation</h3>
+                  <Link to='/register' class="view-more-link">View More Products </Link>
                   
               </div>
           </div>
