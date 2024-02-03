@@ -58,7 +58,13 @@
     padding-right: 1rem;
     margin-right: 20px;
   }
+  .navbar{
+    justify-content: right;
+    align-items:end;
+  }
 }
+
+
 
 // home banner
 .home-banner{
@@ -79,6 +85,8 @@
   }
   video{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .our-story{
     position: absolute;
@@ -106,6 +114,13 @@
       animation-direction: normal;
       animation-fill-mode: none;
     }
+    @media (max-width: 768px) {
+      /* Styles for screens up to 768px width */
+      .our-story {
+        width: 80%; /* Adjust width for smaller screens */
+        left: 10%; /* Center the element within the container */
+      }
+    }
     
   }
   .input-group{
@@ -121,6 +136,7 @@
       border: 0;
       height: 54px;
       font-weight: normal;
+      color:white;
     }
   }
 }
@@ -159,6 +175,15 @@
   }
   video{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    /* Styles for screens up to 768px width */
+    .our-story {
+      width: 80%; /* Adjust width for smaller screens */
+      left: 10%; /* Center the element within the container */
+    }
   }
   .login-form-other{
     .login-signup-now {
@@ -335,17 +360,6 @@
 .footer-title {
   color: whitesmoke;
 }
-
-.social-icons {
-  display: flex;
-}
-
-.social-icons i {
-  margin-right: 10px;
-  font-size: 1.5em;
-  color: white;
-}
-
 .card-container {
   display: flex;
   justify-content: center;
@@ -361,7 +375,7 @@
   height: 100%;
   box-sizing: border-box;
   border: 5px solid transparent; /* Adjust the border size and color */
-  background: linear-gradient(to bottom right, #a890f4, #6381dc,#2352de,#a86df0, #3e465f); /* Adjust gradient colors */
+  background: linear-gradient(to bottom right, #250299, #163aa5,#052687, #02103a);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
@@ -493,4 +507,16 @@
     font-weight: 150;
     padding: 10px;
   }
+}
+
+@media (max-width: 767px) {
+  /* Styles for phones go here */
+  .home-banner{
+    video{
+      
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets go here */
 }

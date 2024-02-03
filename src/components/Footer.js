@@ -14,14 +14,7 @@ const Footer = () => {
         <p>Address: 4th Floor TDI City, Sector 118. Mohali Punjab </p>
         <p>Phone: +91 8369017670</p>
       </div>
-      <div className='footer-column'>
-        <h3 className='footer-title'> Connect Us on social media</h3>
-        <div className='social-icons'>
-          <i className='fab fa-facebook-f'></i>
-          <i className='fab fa-twitter'></i>
-          <i className='fab fa-instagram'></i>
-        </div>
-      </div>
+      
     </div>
   );
 };
